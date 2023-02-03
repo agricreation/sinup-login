@@ -8,6 +8,9 @@ include_once __DIR__ . "/class/db.class.php";
 function load($page){
     include __DIR__ ."/../_template/$page.php";
 }
+function load_template($page){
+    include __DIR__ ."/../_template/$page.php";
+}
 
 //Load all tittles
 function load_title($title){
