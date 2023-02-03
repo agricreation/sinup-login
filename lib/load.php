@@ -1,4 +1,9 @@
 <?php
+
+// Including class files 
+
+include_once __DIR__ . "/class/db.class.php";
+
 //Load all files from _templates
 function load($page){
     include __DIR__ ."/../_template/$page.php";
@@ -10,6 +15,7 @@ function load_title($title){
 }
 
 //Creating a function >> signup
+
 
 function signup($username, $email_address, $password, $phone){
     //Database login

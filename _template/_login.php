@@ -19,7 +19,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
   <a href="register.php" class="btn btn-primary">
-  Login
+  Create an account
   </a>
 </form>
 </div>

@@ -15,3 +15,5 @@ CREATE TABLE `signup` (
 -- Inserting Contents
 INSERT INTO `signup` (`username`, `phone`, `email_address`, `password`)
 VALUES ('agricreations', '9750639894', 'vmoovendhan3@gmail.com', 'password');
+
+-- Mysqli_fetch_assoc
