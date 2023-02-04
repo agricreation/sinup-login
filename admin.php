@@ -2,6 +2,7 @@
     include "lib/load.php";
     load(_header);
 ?>
+
     <?php
     $sql= "SELECT * FROM `signup`";
     $servername = "localhost";
@@ -38,9 +39,11 @@
             <td><?php echo $row['phone'] ?></td>
             <td><?php echo $row['email_address'] ?></td>
             <td><?php echo $row['password'] ?></td>
+            <?php $id=$row['id']; ?>
             <th scope="col"><a href="#"><button class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button></a></th>
-            <th scope="col"><a href="#"><button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button></a></th>
-            </tr>
+            <?php echo'<th scope="col"><a href="lib/admin/delete.php?deleteid='.$id.'"><button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button></a></th>
+            </tr>';
+            ?>
         <?php
       }
       ?>

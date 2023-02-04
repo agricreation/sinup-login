@@ -18,7 +18,7 @@
         header ("location: https://agricreations.com/");
     }
     else{
-        // echo "error";
+        // echo "Something went wrong ";
     }
 ?>
 
@@ -29,21 +29,16 @@
     			</h1>
     			<h6 class="h5 mb-3 fw-normal poppins">Login with your account</h6>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_address">
+    <label for="exampleInputEmail1" class="form-label" >Email address</label>
+    <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_address">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+    <label for="exampleInputPassword1" class="form-label" >Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
   </div>
-  <?php
-  if($count==1){
-    ?>
-    <div>Login success</div><br>
-    <?php
-  }
-  ?>
+
+    <br>
   <button type="submit" class="btn btn-primary">Submit</button>
   <a href="register.php" class="btn btn-primary">
   Create an account

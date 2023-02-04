@@ -16,4 +16,8 @@ CREATE TABLE `signup` (
 INSERT INTO `signup` (`username`, `phone`, `email_address`, `password`)
 VALUES ('agricreations', '9750639894', 'vmoovendhan3@gmail.com', 'password');
 
+-- Deleting content
+
+DELETE FROM `signup` WHERE ((`id` = '46'));
+
 -- Mysqli_fetch_assoc
