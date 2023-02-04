@@ -1,6 +1,3 @@
-<?php
-include "lib/load.php";
-?>
 <!doctype html>
 <html lang="en">
   <head>
